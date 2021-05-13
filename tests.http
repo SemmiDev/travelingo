@@ -1,0 +1,47 @@
+GET localhost:8080/api/v1/travels
+Accept: application/json
+
+###
+
+GET localhost:8080/api/v1/health
+Accept: application/json
+
+###
+
+GET localhost:8080/api/v1/token/new
+Accept: application/json
+
+###
+
+GET localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
+Accept: application/json
+
+###
+
+POST localhost:8080/api/v1/travels
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
+
+{
+  "name": "singapreotrip",
+  "photo": "asasasa",
+  "done": true
+}
+
+###
+
+PUT localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
+
+{
+  "name": "up",
+  "photo": "up",
+  "done": true
+}
+
+###
+
+DELETE localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
