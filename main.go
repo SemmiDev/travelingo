@@ -33,7 +33,7 @@ func init() {
 
 // IsProduction for app environment
 func IsProduction() bool {
-	return os.Getenv("APP_PROFILE") == "production"
+	return os.Getenv("APP_ENVIRONMENT") == "production"
 }
 
 // Travel for field represent in table
@@ -552,7 +552,7 @@ func run() error {
 // yeah!! GO
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
-	log.Printf("Running application in %v environment", os.Getenv("APP_PROFILE"))
+	log.Printf("Running application in %v environment", os.Getenv("APP_ENVIRONMENT"))
 
 	if err := run(); err != nil {
 		log.Fatal(err)

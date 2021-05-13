@@ -1,23 +1,20 @@
+### get list of travels
 GET localhost:8080/api/v1/travels
 Accept: application/json
 
-###
-
+### check healthy
 GET localhost:8080/api/v1/health
 Accept: application/json
 
-###
-
+### create new token
 GET localhost:8080/api/v1/token/new
 Accept: application/json
 
-###
-
+### get travel by id
 GET localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
 Accept: application/json
 
-###
-
+### create a travel
 POST localhost:8080/api/v1/travels
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
@@ -28,8 +25,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzM
   "done": true
 }
 
-###
-
+### update a travel with id
 PUT localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
@@ -40,8 +36,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzM
   "done": true
 }
 
-###
-
+### delete a travel with id
 DELETE localhost:8080/api/v1/travels/609d21df2d4eee5297a02e26
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjA5MTIzMDl9.1hOOC5Y-KonUNwJsWwwwJ-WZT96Ps4YOX8mxJf1wGlE
