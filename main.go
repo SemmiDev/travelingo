@@ -533,8 +533,8 @@ func run() error {
 	// repo -> service
 	service := NewService(r)
 
-	// fiber initialize
 	readTimeoutSecondsCount, _ := strconv.Atoi(os.Getenv("SERVER_READ_TIMEOUT"))
+	// fiber initialize
 	app := fiber.New(fiber.Config{
 		ReadTimeout: time.Second * time.Duration(readTimeoutSecondsCount),
 	})
